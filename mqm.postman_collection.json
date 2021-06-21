@@ -1,0 +1,612 @@
+{
+	"info": {
+		"_postman_id": "1f5a3be9-a855-4d80-a76d-be0ed83873ec",
+		"name": "mqm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MQ  installation",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/admin/installation",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"admin",
+						"installation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ all qmgrs",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/admin/qmgr",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"admin",
+						"qmgr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ Retrieves the next message from a specified queue",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "ibm-mq-rest-csrf-token",
+						"value": "blank",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/messaging/qmgr/{{qm}}/queue/{{queue}}/message",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"messaging",
+						"qmgr",
+						"{{qm}}",
+						"queue",
+						"{{queue}}",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ QueueManager Channels",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "username:mqadmin,\npassword:mqadmin",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v1/admin/qmgr/{{qm}}/channel",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v1",
+						"admin",
+						"qmgr",
+						"{{qm}}",
+						"channel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ QueueManager Specific Channel",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "username:mqadmin,\npassword:mqadmin",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v1/admin/qmgr/{{qm}}/channel/{{channel}}",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v1",
+						"admin",
+						"qmgr",
+						"{{qm}}",
+						"channel",
+						"{{channel}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ specific installation",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/admin/installation/{{installationName}}",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"admin",
+						"installation",
+						"{{installationName}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ Browses the next message from a specified queue",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ibm-mq-rest-csrf-token",
+						"value": "blank",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/messaging/qmgr/{{qm}}/queue/{{queue}}/message",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"messaging",
+						"qmgr",
+						"{{qm}}",
+						"queue",
+						"{{queue}}",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ Sends a message to a specified queue",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"content-type": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ibm-mq-rest-csrf-token",
+						"value": "blank",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "teste"
+				},
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/messaging/qmgr/{{qm}}/queue/{{queue}}/message",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"messaging",
+						"qmgr",
+						"{{qm}}",
+						"queue",
+						"{{queue}}",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MQ queue manager definitios",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"host": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"content-type": true,
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ibm-mq-rest-csrf-token",
+						"value": "blank",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "teste Ricardo"
+				},
+				"url": {
+					"raw": "https://{{mqhost}}:{{mqport}}/ibmmq/rest/v2/admin/qmgr",
+					"protocol": "https",
+					"host": [
+						"{{mqhost}}"
+					],
+					"port": "{{mqport}}",
+					"path": [
+						"ibmmq",
+						"rest",
+						"v2",
+						"admin",
+						"qmgr"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
