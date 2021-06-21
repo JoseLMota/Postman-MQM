@@ -14,7 +14,7 @@ administration into popular DevOps and automation tooling.
 
 Also as an application developer.
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main//images/mqrestapi.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/mqrestapi.png)
 
 Idea:
 
