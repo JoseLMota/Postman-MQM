@@ -26,7 +26,7 @@ Steps for Solution:
   - Create a Postman full JSON Collections and Environments
     specification to test and execute code (
 
-https://github.com/JoseLMota/Postman-MQM/edit/main//Postman
+
 
 **Postman MQ ENV**
 
