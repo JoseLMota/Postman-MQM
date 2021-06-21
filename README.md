@@ -53,7 +53,7 @@ Steps for Solution:
 **I created a  wrapper to translate CURL source code output into
 ANSIBLE-PLAYBOOK with URI module.**
 
-![]https://github.com/JoseLMota/Postman-MQM/blob/main/images/curltoansible.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/curltoansible.png)
 
 Generated code
  
