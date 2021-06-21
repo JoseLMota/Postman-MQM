@@ -29,15 +29,15 @@ Steps for Solution:
 
 
 **Postman MQ ENV**
+https://github.com/JoseLMota/Postman-MQM/blob/main/images/awxpostmancollection.png
 
-
-![](https://github.com/JoseLMota/Postman-MQM/tree/main/images/mqenv.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/mqenv.png)
 
 
 **Postman MQ Collection**
 
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/mqcollection.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/mqcollection.png)
 
 
 
@@ -45,25 +45,25 @@ Steps for Solution:
 
 **The list of code generators for POSTMAN are:**
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/postmancode.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/postmancode.png)
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/postmantestmq.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/postmantestmq.png)
 
 **Why don’t we generate code for ANSIBLE?**
 
 **I created a  wrapper to translate CURL source code output into
 ANSIBLE-PLAYBOOK with URI module.**
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/curltoansible.png)
+![]https://github.com/JoseLMota/Postman-MQM/blob/main/images/curltoansible.png)
 
 Generated code
  
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/code.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/code.png)
 
 
 Playbook Output
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/outputansilbe.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/outputansilbe.png)
 
  
 
@@ -78,4 +78,4 @@ with this converter.**
 
 **Postman vcenter public collection in postman rep**
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/awxpostmancollection.png)
+![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/awxpostmancollection.png)
