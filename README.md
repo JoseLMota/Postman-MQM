@@ -14,7 +14,7 @@ administration into popular DevOps and automation tooling.
 
 Also as an application developer.
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/mqrestapi.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main//images/mqrestapi.png)
 
 Idea:
 
@@ -26,18 +26,18 @@ Steps for Solution:
   - Create a Postman full JSON Collections and Environments
     specification to test and execute code (
 
-https://github.com/emea-ansible-automation-summit/solution-restapitoansible/tree/main/Postman
+https://github.com/JoseLMota/Postman-MQM/edit/main//Postman
 
 **Postman MQ ENV**
 
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/mqenv.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/mqenv.png)
 
 
 **Postman MQ Collection**
 
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/mqcollection.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/mqcollection.png)
 
 
 
@@ -45,25 +45,25 @@ https://github.com/emea-ansible-automation-summit/solution-restapitoansible/tree
 
 **The list of code generators for POSTMAN are:**
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/postmancode.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/postmancode.png)
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/postmantestmq.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/postmantestmq.png)
 
 **Why don’t we generate code for ANSIBLE?**
 
 **I created a  wrapper to translate CURL source code output into
 ANSIBLE-PLAYBOOK with URI module.**
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/curltoansible.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/curltoansible.png)
 
 Generated code
  
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/code.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/code.png)
 
 
 Playbook Output
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/outputansilbe.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/outputansilbe.png)
 
  
 
@@ -78,4 +78,4 @@ with this converter.**
 
 **Postman vcenter public collection in postman rep**
 
-![](https://github.com/emea-ansible-automation-summit/solution-restapitoansible/blob/main/images/awxpostmancollection.png)
+![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/awxpostmancollection.png)
