@@ -31,7 +31,7 @@ https://github.com/JoseLMota/Postman-MQM/edit/main//Postman
 **Postman MQ ENV**
 
 
-![](https://github.com/JoseLMota/Postman-MQM/edit/main/images/mqenv.png)
+![](https://github.com/JoseLMota/Postman-MQM/tree/main/images/mqenv.png)
 
 
 **Postman MQ Collection**
