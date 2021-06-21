@@ -29,7 +29,6 @@ Steps for Solution:
 
 
 **Postman MQ ENV**
-https://github.com/JoseLMota/Postman-MQM/blob/main/images/awxpostmancollection.png
 
 ![](https://github.com/JoseLMota/Postman-MQM/blob/main/images/mqenv.png)
 
